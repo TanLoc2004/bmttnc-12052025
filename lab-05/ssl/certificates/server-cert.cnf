@@ -1,0 +1,13 @@
+[req]
+default_bits       = 2048             # Độ dài khóa RSA
+prompt             = no               # Không hỏi thủ công, dùng phần [dn]
+default_md         = sha256           # Thuật toán hash
+distinguished_name = dn               # Sử dụng mục [dn] để điền thông tin
+
+[dn]
+C  = US                              # Country (quốc gia)
+ST = State                           # State (tỉnh/bang)
+L  = Location                        # Locality (thành phố)
+O  = Organization                    # Tổ chức
+OU = Organizational Unit             # Bộ phận
+CN = localhost                       # Common Name (thường là domain hoặc tên máy)
